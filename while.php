@@ -9,7 +9,7 @@
     
     <h1>งานที่1 ปัญญากร รัตนมณี BIT.2/5 เลขที่12</h1>
     
-    <a href="while.php">While Loop</a>
+    <a href="index.php">For Loop</a>
 
     <form action="">
         <label for="">เลขแม่สูตรคูณ</label> <br>
@@ -19,21 +19,31 @@
     </form>
 
     <?php
-        if(isset($_GET["num"])){
+    $i = 1;
+    while ($i <= 3) {
+    echo $i;
+    $i++;
+    }
+    echo "<br>";
 
-            $num = $_GET["num"];
+    $i = 5;
+    while ($i >=1){
+    echo $i;
+    $i--;
+    }
+    echo "<br>";
 
-            echo "สูตรคูณแม่" . $num . "<br>";
-
-
-            for($i = 1; $i <= 12; $i++){
-                echo $num . " x " . $i . " = " . ($num * $i) . "<br>";
-            }
-
-        }
+    $data = ["A","B","C"];
+    $i = 0;
+    while ($i < count($data)) {
+    echo $data[$i];
+    $i++;
+    }
     ?>
 
     
 
 </body>
 </html>
+
+
